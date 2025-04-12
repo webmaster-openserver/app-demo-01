@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY . /usr/src/app
 RUN npm install
-RUN npm run build:prod
+RUN npm run build -- --configuration=production
 
 # production environment
 FROM nginx:alpine
