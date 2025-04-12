@@ -1,6 +1,6 @@
 # build environment
 FROM node:18-alpine as builder
-RUN mkdir /usr/src/app
+# RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY . /usr/src/app
